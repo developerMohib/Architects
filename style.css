@@ -101,6 +101,9 @@ nav{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+.feature-img img {
+    width: 17rem;
+}
 .feature-text {
     margin-left: 35px;
 }
