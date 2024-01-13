@@ -17,6 +17,7 @@
 }
 .light-gray{
     color:  #727272;
+    margin: 20px 0px;
 }
 .primary-btn {
     color: #FFF;
@@ -27,6 +28,7 @@
     text-decoration: none;
     display: inline-block;
     position: relative;
+    z-index: 9;
 }
 .primary-btn::after{
     content: " ";
@@ -37,14 +39,14 @@
     left: 0;
     background-color: black;
     border-radius: 5px;
+
     z-index: -1;
-    transition: .5s;
+    transition: .4s;
 }
 .primary-btn:hover::after{
     width: 100%;
     height: 100%;
 }
-
 /* Header Style */
 
 header{
@@ -83,12 +85,118 @@ nav{
     text-align: center;
     padding: 0 5rem;
 }
-.banner-des p{
-    margin: 20px 0px;
-}
-.banner-des a{
-    z-index: 9;
-}
 .banner-img img{
     width: 100%;
+}
+
+/* Feature Section */
+
+.feature-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.feature-text {
+    margin-left: 35px;
+}
+.title .quick{
+    color: #727272;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.title .feature-heading{
+    color: #FF900E;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Service Section  */
+.servies{
+    margin-top:4rem;
+}
+.service-content{
+    display: flex;
+    justify-content: space-between;
+}
+.service-img {
+    /* text-align: right; */
+}
+.serve-list .title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.service-img img {
+    width: 100%;
+    margin: 0 auto;
+}
+.sv-exp {
+    border-radius: 8px;
+    background: #FF900E;
+    width: 250px;
+    position: relative;
+    bottom: 4rem;
+    left: 1rem;
+    padding: 20px 0px;
+}
+
+.sv-exp h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.sv-exp p{
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Fact section */
+.fact-heading{
+    width: 40%;
+    margin-bottom: 2rem;
+}
+.fact-card{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 10px 20px;
+}
+.card .title{
+color:#424242;
+font-weight: 600;
+}
+.sponsors{
+    margin: 3.5rem 0;
+}
+.sponsors .fact-heading{
+    margin: auto;
+    text-align: center;
+}
+.sponsors-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px;
+}
+.sponsors-list img{
+    width: 100px;
+    height: auto;
+}
+footer{
+    margin:4rem 0;
+}
+footer .container{
+    border-radius: 8px;
+    background: #FFF4E7;
+    text-align:center;
 }
