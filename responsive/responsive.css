@@ -1,0 +1,26 @@
+
+/* Up to Tab */
+
+@media screen and (min-width:992px) and (max-width:1024px) {
+    .banner-des {
+        margin: 2.5rem auto;
+    }
+}
+
+/* Mobile to tab */
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    .banner-des {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Mobile devices */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .banner-des {
+        width: 100%;
+        padding: 0;
+    }
+}
